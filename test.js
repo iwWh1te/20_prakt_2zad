@@ -28,3 +28,7 @@ function onClickNext() {
 	textWarning="\n";
 	return false;
 }
+
+function onClickShowItem(){
+	alert("PosArray : "+posArray[cnt]);
+}
