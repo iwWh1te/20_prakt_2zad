@@ -1,11 +1,19 @@
 //test.js
-
 var cnt=0;
 var posArray=[49,50,48,51,52];
 var cntStep=1;
 var cntMin=0;
 var cntMax=9;
 var textWarning="\n";
+
+function onClickSetMax() {
+	cnt=cntMax;
+	alert("Clicked button : SetMax"+"\n"+"cnt = "+cnt);
+}
+
+function onClickShowItem() {
+	alert("PosArray : "+posArray[cnt]);
+}
 
 function onClickBack() {
 	cnt-=cntStep;
@@ -27,8 +35,4 @@ function onClickNext() {
 	alert("Clicked button : Next"+"\n"+"cnt = "+cnt+textWarning);
 	textWarning="\n";
 	return false;
-}
-
-function onClickShowItem(){
-	alert("PosArray : "+posArray[cnt]);
 }
