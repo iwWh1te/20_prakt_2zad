@@ -15,6 +15,11 @@ function onClickShowItem() {
 	alert("PosArray : "+posArray[cnt]);
 }
 
+function onClickReset() {
+	cnt=cntMin;
+	alert("Clicked button : Reset"+"\n"+"cnt = "+cnt);
+}
+
 function onClickBack() {
 	cnt-=cntStep;
 	if(cnt<cntMin){
